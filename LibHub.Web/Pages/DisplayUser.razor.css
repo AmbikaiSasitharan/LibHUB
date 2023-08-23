@@ -1,0 +1,114 @@
+﻿h5, h4, h3 {
+    margin: 0;
+}
+
+h2 {
+    color: #fbae2a;
+    font-family: 'League Spartan';
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h3 {
+    color: #f7efc2;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+h5 {
+    font-size: 30pt;
+}
+
+h1 {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+h6 {
+    color: #fbae2a;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+table {
+    
+    height: 210px;
+    border-radius: 20px;
+}
+
+
+.sub-row {
+    background-color: #f7efc2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bottom-row {
+    background-color: #b83d02;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.checked {
+    color: #fbae2a;
+}
+
+p {
+    line-height: 18px;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+ .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked) > label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+        .rate:not(:checked) > label:before {
+            content: '★ ';
+        }
+
+    .rate > input:checked ~ label {
+        color: #ffc700;
+    }
+
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;
+    }
+
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+
+

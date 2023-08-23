@@ -1,0 +1,28 @@
+.tooltip-container[b-glj70up6lr] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.tooltip-content[b-glj70up6lr] {
+    cursor: pointer;
+}
+
+.tooltip-text[b-glj70up6lr] {
+    visibility: hidden;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 1;
+    top: 125%;
+    left: 0%;
+    opacity: 0;
+}
+
+.tooltip-container:hover .tooltip-text[b-glj70up6lr] {
+    visibility: visible;
+    opacity: 1;
+}

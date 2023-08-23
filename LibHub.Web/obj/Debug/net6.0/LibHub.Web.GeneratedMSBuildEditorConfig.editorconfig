@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = LibHub.Web
+build_property.RootNamespace = LibHub.Web
+build_property.ProjectDir = C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/PopUpModel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9wVXBNb2RlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/AddBookDescription.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQm9va0Rlc2NyaXB0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-zelhlzhn3v
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/AddUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8wmnubxe59
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/BookDescriptionInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va0Rlc2NyaXB0aW9uSW52ZW50b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-cjnmnu57x8
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/BorrowHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9ycm93SGlzdG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9bihfl9h9e
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayBookDescriptionDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUJvb2tEZXNjcmlwdGlvbkRldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-w46oz05chc
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayBookDescriptionDetailsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUJvb2tEZXNjcmlwdGlvbkRldGFpbHNDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lrygyigx51
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayBookDescriptionDetailsForPotentialBorrower.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUJvb2tEZXNjcmlwdGlvbkRldGFpbHNGb3JQb3RlbnRpYWxCb3Jyb3dlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-xjzuejcexa
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayBookDescriptionDetailsForPotentialBorrowerCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUJvb2tEZXNjcmlwdGlvbkRldGFpbHNGb3JQb3RlbnRpYWxCb3Jyb3dlckNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9u2revghai
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayBookDescriptions.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUJvb2tEZXNjcmlwdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0hjxawbj9b
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayInactiveBookDescriptionDetailsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUluYWN0aXZlQm9va0Rlc2NyaXB0aW9uRGV0YWlsc0NhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ct7ysksxum
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayInactiveBookDescriptionDetailsForPotentialBorrowerCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUluYWN0aXZlQm9va0Rlc2NyaXB0aW9uRGV0YWlsc0ZvclBvdGVudGlhbEJvcnJvd2VyQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-aczq39l5kc
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayInActiveUserDetailsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUluQWN0aXZlVXNlckRldGFpbHNDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-1hzi73ai84
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayLateBorrowWithFeesFinedDetailsToolTip.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUxhdGVCb3Jyb3dXaXRoRmVlc0ZpbmVkRGV0YWlsc1Rvb2xUaXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-yb8nuqiw1d
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayLateBorrowWithoutFeesFinedToolTip.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUxhdGVCb3Jyb3dXaXRob3V0RmVlc0ZpbmVkVG9vbFRpcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-glj70up6lr
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVVzZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-nk58jw6q06
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/DisplayUserDetailsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVVzZXJEZXRhaWxzQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zbv8u3zms9
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/EditAuthorInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEF1dGhvckludmVudG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-rxpi3tjp67
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/EditGenreInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEdlbnJlSW52ZW50b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-dblv8hd0k4
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/HomePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3scal78w65
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/UserBookSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckJvb2tTZWxlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6vd6t8sthw
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/UserInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckludmVudG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-friuxtzwzq
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/UsersWithFeesFined.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNXaXRoRmVlc0ZpbmVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-kelmm3ruxa
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Pages/UsersWithLateBorrowButNoFeesFined.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNXaXRoTGF0ZUJvcnJvd0J1dE5vRmVlc0ZpbmVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ti1ka7zpx7
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-om6ijrfc7a
+
+[C:/Users/r_sas/Desktop/LibHubSolution/LibHub.Web/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hvlni4h9kh

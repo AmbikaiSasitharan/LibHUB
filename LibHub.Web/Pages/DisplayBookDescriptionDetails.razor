@@ -1,0 +1,119 @@
+﻿@page "/displaybookdescriptiondetails/{Id:int}"
+@inherits LibHub.Web.Pages.DisplayBookDescriptionDetailsBase
+@using Syncfusion.Blazor.Popups;
+@using Syncfusion.Blazor.Buttons;
+@using System.Globalization;
+
+
+@if (Product == null && ErrorMessage == null)
+{
+    <h5>Loading Book Details...</h5>
+}
+else if (ErrorMessage != null)
+{
+    <DisplayError ErrorMessage="@ErrorMessage"></DisplayError>
+}
+else
+{
+    <div class="container">
+        <div class="column">
+            <h5>@Product.Title</h5>
+            <h4>@Product.AllAuthorsInOneString</h4>
+            <h1>@Product.Description</h1>
+        </div>
+        <div class="column">
+            <div class="tableWrapper">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Book ID#</th>
+                        <th>EntryDate</th>
+                        <th>Language</th>
+                        <th>Status</th>
+                        <th>Cost at Time of Purchase</th>
+                    </tr>
+                    @foreach (var book in BookDetails)
+                    {
+                        <tr>
+                            <th></th>
+                            <th>@book.Id</th>
+                            <th>@book.EntryDate</th>
+                            <th>@book.Language</th>
+                            <th>@book.Status</th>
+                            <th>@book.CostAtTimeOfPurchase.ToString("C", new CultureInfo("en-US"))</th>
+                        </tr>
+                    }
+                </table>
+            </div>
+
+                <button class="btn btn-primary" @onclick="openModal_ForAddBookCopy">Add Book Copy</button>
+            
+                <PopUpModel Title="Add Book Copy" IsOpened="IsOpened_ForAddBookCopy">
+                <ModelBody>
+                    <EditForm Model="@bookToAdd" OnValidSubmit="closeModal_ForAddBookCopy">
+                        <DataAnnotationsValidator />
+                        <div class="form-group">
+                            <label for="Language">Language:</label>
+                            <InputText id="Language" class="form-control" @bind-Value="@bookToAdd.Language" />
+                            <ValidationMessage For="@(() => bookToAdd.Language)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="CostAtPurchase">Cost at purchase:</label>
+                            <InputNumber id="CostAtPurchase" class="form-control" @bind-Value="@bookToAdd.CostAtTimeOfPurchase" />
+                            <ValidationMessage For="@(() => bookToAdd.CostAtTimeOfPurchase)" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Add Book</button>
+                        <button class="btn btn-primary" @onclick="cancelModal_ForAddBookCopy">Cancel</button>
+                    </EditForm>
+                </ModelBody>
+                <ModelFooter>
+
+                </ModelFooter>
+            </PopUpModel>
+        </div>      
+    </div>
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <h2>Rating</h2>
+            </div>
+            <div class="col-md-7">
+                <h2>Comment</h2>
+            </div>
+            <div class="col-md-2">
+                <h2>Username</h2>
+            </div>
+        </div>
+        @foreach (var rating in allRatingsForGivenBookDescription)
+        {
+            <div class="row sub-row align-items-center">
+                <div class="col-md-3">
+                    @for (var i = 1; i <= 5; i++)
+                    {
+                        @if (i <= rating.rating)
+                        {
+                            <span class="fa fa-star checked"></span>
+                        }
+                        else
+                        {
+                            <span class="fa fa-star"></span>
+                        }
+                    }
+
+                </div>
+                <div class="col-md-6">
+                    <h6>@rating.Comment</h6>
+                </div>
+                <div class="col-md-3">
+                <h6>@rating.Username</h6>
+                </div>
+            </div>
+        }
+    <div class="row bottom-row">
+        <h7>>Popcorn</h7>
+    </div>
+}
+
+@code {
+    //<div class="detail-text">Genres:<div class="detail-text">@GenresInOneString</div></div>
+}

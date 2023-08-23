@@ -1,0 +1,122 @@
+﻿@page "/DisplayBookDescriptionDetailsForPotentialBorrower/{bookDescriptionId:int}/{userId:int}"
+@inherits DisplayBookDescriptionDetailsForPotentialBorrowerBase
+@using Syncfusion.Blazor.Popups;
+@using Syncfusion.Blazor.Buttons;
+
+@if (BookDescriptionDetails == null && ErrorMessage == null)
+{
+    <h3>Loading Book Details...</h3>
+}
+else if (ErrorMessage != null)
+{
+    <DisplayError ErrorMessage="@ErrorMessage"></DisplayError>
+}
+else
+{    
+    <div class="container">
+        <div class="column">
+            <h5>@BookDescriptionDetails.Title</h5>
+            <h4>@BookDescriptionDetails.AllAuthorsInOneString</h4>
+            <h1>@BookDescriptionDetails.Description</h1>
+        </div>
+        <div class="column">
+            @if (BookDescriptionDetails.NumCopies == 0)
+            {
+                <h1>Unfortunately Their Are No Copies of This Book In Record</h1>
+            }
+            else
+            {
+            <div class="tableWrapper">
+                <table>
+                    <tr>
+                        <th>Book ID#</th>
+                        <th>EntryDate</th>
+                        <th>Language</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    @foreach (var book in BookDetails)
+                    {
+                        <tr>
+                            <th>@book.Id</th>
+                            <th>@book.EntryDate</th>
+                            <th>@book.Language</th>
+                            <th>@book.Status</th>
+                            @if (book.Status == "Available")
+                            {
+                                <button class="btn btn-primary" @onclick="async () => openModal_ToConfirmAddBorrow(book.Id)">
+                                    <b>Borrow</b>
+                                </button>
+                            }
+                            else
+                            {
+                                <th></th>
+                            }
+                        </tr>
+                    }
+                </table>
+            </div>
+            }
+            
+
+            <PopUpModel Title="" IsOpened="IsOpened_ForAddBorrow">
+                <ModelBody>
+                    Are you sure you would like to borrow the book:
+                    Title: @TitleToDisplayDurigBorrowConfirmation
+                    ID: @IDToDisplayDuringBorrowConfirmation
+                    Language: @LanguageToDisplayDuringBorrowConfirmation
+                </ModelBody>
+                <ModelFooter>
+                    <button class="btn btn-primary" @onclick="cancelModal_ToConfirmAddBorrow">Cancel</button>
+                    <button class="btn btn-primary" @onclick="confirmModal_ToConfirmAddBorrow">Save Changes</button>
+                </ModelFooter>
+            </PopUpModel>
+\                
+            <button class="btn btn-primary" @onclick="NavigateBackTo">
+                <b>Browse For More Books</b>
+            </button>
+            <button class="btn btn-primary" @onclick="NavigateBackToUser">
+                <b>Return To User Details</b>
+            </button>
+        </div>
+    </div> 
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <h2>Rating</h2>
+            </div>
+            <div class="col-md-7">
+                <h2>Comment</h2>
+            </div>
+            <div class="col-md-2">
+            <h2>Username</h2>
+            </div>
+        </div>
+        @foreach (var rating in allRatingsForGivenBookDescription)
+        {
+            <div class="row sub-row align-items-center">
+                <div class="col-md-3">
+                    @for (var i = 1; i <= 5; i++)
+                    {
+                        @if (i <= rating.rating)
+                        {
+                            <span class="fa fa-star checked"></span>
+                        }
+                        else
+                        {
+                            <span class="fa fa-star"></span>
+                        }
+                    }
+
+                </div>
+                <div class="col-md-6">
+                    <h6>@rating.Comment</h6>
+                </div>
+                <div class="col-md-3">
+                <h6>@rating.Username</h6>
+                </div>
+            </div>
+        }
+    <div class="row bottom-row">
+        <h7>>Popcorn</h7>
+    </div>
+}

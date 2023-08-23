@@ -1,0 +1,78 @@
+﻿@page "/addUserPage"
+@inherits AddUserBase
+@using Syncfusion.Blazor.Popups;
+@using Syncfusion.Blazor.Buttons;
+
+<EditForm Model="@userToAdd" OnValidSubmit="openModal_ToAddUser">
+    <DataAnnotationsValidator />
+    <div class="container">
+        <div class="column">
+            <div class="form-group">
+                <label for="UserName">Username:</label>
+                <InputText id="UserName" class="form-control" @bind-Value="@userToAdd.UserName" />
+                <ValidationMessage For="@(() => userToAdd.UserName)" />
+            </div>
+
+            <div class="form-group">
+                <label for="FName">First Name:</label>
+                <InputText id="FName" class="form-control" @bind-Value="@userToAdd.FName" />
+                <ValidationMessage For="@(() => userToAdd.FName)" />
+            </div>
+
+            <div class="form-group">
+                <label for="MName">Middle Name:</label>
+                <InputText id="MName" class="form-control" @bind-Value="@userToAdd.MName" />
+            </div>
+
+            <div class="form-group">
+                <label for="LName">Last Name:</label>
+                <InputText id="LName" class="form-control" @bind-Value="@userToAdd.LName" />
+                <ValidationMessage For="@(() => userToAdd.LName)" />
+            </div>
+        </div>
+        <div class="column">
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <InputText id="Email" class="form-control" @bind-Value="@userToAdd.Email" />
+                <ValidationMessage For="@(() => userToAdd.Email)" />
+            </div>
+
+            <div class="form-group">
+                <label for="Address">Address:</label>
+                <InputText id="Address" class="form-control" @bind-Value="@userToAdd.Address" />
+                <ValidationMessage For="@(() => userToAdd.Address)" />
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNum">Phone Number:</label>
+                <InputText id="PhoneNum" class="form-control" @bind-Value="@userToAdd.PhoneNum" />
+                <ValidationMessage For="@(() => userToAdd.PhoneNum)" />
+            </div>
+
+            <div class="form-group">
+                <label for="BirthDate">Birth Date:</label>
+                <InputDate id="BirthDate" class="form-control" @bind-Value="@userToAdd.BirthDate" />
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">
+        Add User
+    </button>
+</EditForm>
+
+<PopUpModel Title="" IsOpened="IsOpened_ForAddUser">
+    <ModelBody>
+        Are you sure you would like to add the user:
+        Full Name: @userToAdd.FName @userToAdd.MName @userToAdd.LName
+        Username: @userToAdd.UserName
+        Address: @userToAdd.Address
+        Email: @userToAdd.Email
+        Phone Number: @userToAdd.PhoneNum
+    </ModelBody>
+    <ModelFooter>
+        <button class="btn btn-primary" @onclick="cancelModal_ToAddUser">Cancel</button>
+        <button class="btn btn-primary" @onclick="confirmModal_ToAddUser">Save Changes</button>
+    </ModelFooter>
+</PopUpModel>
+

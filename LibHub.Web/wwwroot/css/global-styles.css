@@ -1,0 +1,420 @@
+﻿
+:root {
+    --primary: white;
+    --secondary: #5b9572; /*light green var(--secondary)*/
+    --tertiary: #0c3b2e; /*dark green var(--tertiary)*/
+    --quatinary: #bb8a52; /*brown var(--quatinary)*/
+    --fifth: #f7efc2; /*background var(--fifth)*/
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('open-iconic/font/fonts/LeagueSpartan800.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Libre Baskville Italic';
+    src: url('open-iconic/font/fonts/LibreBaskvilleItalic400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Libre Baskville Normal';
+    src: url('open-iconic/font/fonts/LibreBaskvilleNormal400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Material Symbol Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url('open-iconic/font/fonts/menu-book-icon.woff2') format('woff2');
+}
+
+.material-symbol-outlined {
+    font-family: 'Material Symbol Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+
+.show {
+    display: block;
+}
+
+.pop-up-model {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.pop-up-model-content {
+    border-radius: 30px;
+    width: 650px;
+    background-color: #f7efc2;
+    box-shadow: 2px 4px 68px -25px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 2px 4px 68px -25px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 4px 68px -25px rgba(0, 0, 0, 1);
+}
+
+.pop-up-model-header {
+    padding: 15px;
+    width: 650px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #1d2a10;
+    color: white;
+    width: 100%;
+}
+
+.pop-model-title {
+    margin: 5px;
+    display: inline-block;
+    color: #b83d02;
+    font-family: 'League Spartan';
+    font-weight: 800;
+}
+
+.pop-model-close-button {
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+    .pop-model-close-button:hover {
+        color: red;
+    }
+
+.pop-up-model-body {
+    padding: 10px;
+}
+
+.pop-up-model-footer {
+    padding: 15px;
+    width: 650px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #1d2a10;
+    color: white;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+table {
+    display: block;
+    height: 100px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 0px;
+    outline: none;
+    
+}
+
+.tableWrapper {
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+table tr:first-child {
+    background-color: #0c3b2e;
+}
+
+    table tr:first-child th {
+        color: #f7efc2;
+        text-align: center;
+    }
+
+
+
+tr:nth-child(even) {
+    background-color: #f7efc2;
+    color: #0c3b2e;
+}
+
+tr:nth-child(odd) {
+    background-color: #5b9572;
+    color: #0c3b2e;
+}
+
+
+.btn-primary {
+    margin: 1.5px;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #f7efc2;
+    background-color: #b83d02;
+    border-color: #b83d02;
+    font-family: 'League Spartan';
+    font-weight: 400;
+}
+
+    .btn-primary:hover {
+        margin: 1.5px;
+        border-radius: 30px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #b83d02;
+        background-color: #f7efc2;
+        border-color: #b83d02;
+    }
+
+    .btn-right-align {
+    float: right;
+}
+
+    .btn-left-align {
+    float: left;
+}
+
+.btn-header {
+    margin: 1.5px;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #f7efc2;
+    background-color: black;
+    border-color: #f7efc2;
+}
+
+    .btn-header:hover {
+        margin: 1.5px;
+        border-radius: 30px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background-color: #f7efc2;
+        border-color: black;
+    }
+
+.btn-link {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #b83d02;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+    .btn-link:hover {
+        background: none !important;
+        border: none;
+        padding: 0 !important;
+        /*optional*/
+        font-family: arial, sans-serif;
+        /*input has OS specific font-family*/
+        color: #225703;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.form-control {
+    overflow-y: scroll;
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space the columns evenly */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px; /* Set a maximum width for the container if needed */
+}
+
+.column {
+    width: 48%; /* Set the width of each column */
+    padding: 0 10px; /* Add some padding for spacing */
+}
+
+h5 {
+    color: #b83d02;
+    font-family: 'League Spartan';
+    font-size: 55pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h4 {
+    color: #b83d02;
+    font-family: 'Libre Baskville Italic';
+    font-size: 18pt;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px;
+    padding: 1px;
+}
+
+h3 {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 13pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+.form-group label {
+    color: #b83d02;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14pt;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p {
+    color: #b83d02;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14pt;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0px;
+}
+
+.selectWrapper {
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+    
+.selectBox {
+    height: 150px;
+    border: 0px;
+    outline: none;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.topright {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card {
+    background-color:  #f7efc2;
+    border-color: #ff6a00;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 12pt;
+}
+
+    .card:hover {
+        background-color: #f7efc2;
+        border-color: #ff6a00;
+        margin: 0px;
+        margin-bottom: 5px;
+        border-radius: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.card-title {
+    font-family: 'League Spartan';
+    font-size: 15pt;
+    font-weight: 800;
+    color: #b83d02;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card-text {
+    font-family: 'Libre Baskville Italic';
+    font-style: italic;
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.detail-label{
+    font-family: 'Libre Baskville Italic';
+    font-style: italic;
+    font-size: 15pt;
+    font-weight: 100;
+    color: #ff6a00;
+}
+
+.detail-text {
+    font-family: 'Libre Baskville Normal';
+    font-style: italic;
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.tooltip-container .tooltip-text {
+    visibility: visible;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    opacity: 0.75;
+}

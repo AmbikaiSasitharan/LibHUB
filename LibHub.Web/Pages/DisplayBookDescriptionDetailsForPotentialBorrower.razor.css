@@ -1,0 +1,98 @@
+﻿.column {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 10px;
+}
+
+h5, h4, h3, h7{
+    margin: 0;
+}
+
+h7 {
+    color: #5b9572;
+}
+
+h2 {
+    color: #0c3b2e;
+    font-family: 'League Spartan';
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h3 {
+    color: #f7efc2;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+h5 {
+    font-size: 30pt;
+}
+
+h1 {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+
+
+h6 {
+    color: #fbae2a;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+
+table {
+    width: 500px;
+    height: 423px;
+    overflow-x: hidden;
+}
+
+.row {
+    background-color: #5b9572;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.sub-row {
+    background-color: #f7efc2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bottom-row {
+    background-color: #5b9572;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20pt;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-star:before {
+    content: '★ ';
+}
+
+.fa-star-o:before {
+    content: '★ ';
+}
+
+.checked {
+    color: #fbae2a;
+}

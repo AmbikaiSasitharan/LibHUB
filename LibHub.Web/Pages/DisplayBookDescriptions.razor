@@ -1,0 +1,41 @@
+﻿@inherits DisplayBookDescriptionsBase
+
+<div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-11">
+        <button class="btn btn-primary btn-left-align" @onclick="DeactivateSelectedValues">Deactivated Checked Books(s)</button>
+        <button class="btn btn-primary btn-right-align" @onclick="ActivateSelectedValues">Activated Checked Books(s)</button>
+    </div>
+</div>
+
+@foreach (var bookDescription in bookDescriptionInventoryDTO)
+{
+    var Value = bookDescription.Id;
+    bool Checked = false;
+    if (SelectedIds.Contains(Value))
+    {
+        Checked = true;
+    }
+    <div class="row align-items-center">
+        <div class="col-md-1">
+            <input type="checkbox" checked=@Checked @onchange="eventArgs => {CheckboxClicked(Value, eventArgs.Value);}">
+        </div>
+
+        @if (bookDescription.IsActive)
+        {
+            <div class="col-md-11">
+                <a href="displaybookdescriptiondetails/@bookDescription.Id">
+                    <DisplayBookDescriptionDetailsCard bookDescriptionToDisplay="bookDescription"></DisplayBookDescriptionDetailsCard>
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-11">
+                <DisplayInactiveBookDescriptionDetailsCard bookDescriptionToDisplay="bookDescription"></DisplayInactiveBookDescriptionDetailsCard>
+            </div>
+        }
+    </div>
+}

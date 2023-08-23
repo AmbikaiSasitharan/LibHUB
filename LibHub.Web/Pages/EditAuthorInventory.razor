@@ -1,0 +1,76 @@
+﻿@inherits EditAuthorInventoryBase
+
+<div class="container">
+    <div class="column">
+        <EditForm Model="@authorToAdd" OnValidSubmit="() => (AddAuthor_Click(authorToAdd))">
+            <DataAnnotationsValidator />
+
+            <div class="form-group">
+                <label for="FName">First Name:</label>
+                <InputText id="FName" class="form-control" @bind-Value="@authorToAdd.FName" />
+                <ValidationMessage For="@(() => authorToAdd.FName)" />
+            </div>
+
+            <div class="form-group">
+                <label for="MName">Middle Name:</label>
+                <InputText id="MName" class="form-control" @bind-Value="@authorToAdd.MName" />
+            </div>
+
+            <div class="form-group">
+                <label for="LName">Last Name:</label>
+                <InputText id="LName" class="form-control" @bind-Value="@authorToAdd.LName" />
+                <ValidationMessage For="@(() => authorToAdd.LName)" />
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Add Author
+            </button>
+        </EditForm>
+    </div>
+    <div class="column">
+        @if (allAuthors == null)
+        {
+            <h3>Loading Author Inventory...</h3>
+        }
+        else
+        {
+            var authorcount = allAuthors.Count();
+            @if (authorcount > 0)
+            {
+                var borrowDetails = new List<AuthorDetailsDTO>();
+                borrowDetails = allAuthors.ToList();
+                <div class="tableWrapper">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Author ID#</th>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                        </tr>
+                        @foreach (var author in allAuthors)
+                        {
+                            var Value = author.Id;
+                            bool Checked = false;
+                            if (SelectedIds.Contains(Value))
+                            {
+                                Checked = true;
+                            }
+
+                            <tr>
+                                <th><input type="checkbox" checked=@Checked @onchange="eventArgs => {CheckboxClicked(Value, eventArgs.Value);}"></input></th>
+                                <th>@author.Id</th>
+                                <th>@author.FName</th>
+                                <th>@author.MName</th>
+                                <th>@author.LName</th>
+                            </tr>
+                        }
+                    </table>
+                </div>
+                <button class="btn btn-primary" @onclick="RemoveSelectedValues">Remove Checked Author(s)</button>
+            }
+            
+        }
+    </div>
+</div>
+
+\

@@ -1,0 +1,21 @@
+﻿<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            @bookDescriptionInventoryDTO.Title
+        </div>
+        <div class="topright">
+            @bookDescriptionInventoryDTO.PublishDate
+        </div>
+        <p class="card-text">
+            <b>@bookDescriptionInventoryDTO.AllAuthorsInOneString</b>
+        </p>
+        <div class="bottomright">
+            @bookDescriptionInventoryDTO.Rating
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public BookDescriptionInventoryDTO bookDescriptionInventoryDTO { get; set; }
+}

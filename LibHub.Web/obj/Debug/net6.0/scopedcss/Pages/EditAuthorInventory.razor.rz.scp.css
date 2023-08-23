@@ -1,0 +1,21 @@
+label[b-rxpi3tjp67] {
+    color: #f8e162;
+}
+
+.container[b-rxpi3tjp67] {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space the columns evenly */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px; /* Set a maximum width for the container if needed */
+}
+
+.column[b-rxpi3tjp67] {
+    width: 70%; /* Set the width of each column */
+    padding: 0 10px; /* Add some padding for spacing */
+}
+
+table[b-rxpi3tjp67] {
+    height: 195px;
+    overflow-x: hidden;
+}
+

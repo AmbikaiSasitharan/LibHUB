@@ -1,0 +1,18 @@
+﻿<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            @userToDisplay.FName @userToDisplay.MName @userToDisplay.LName 
+        </div>
+        <div class="topright">
+            User ID: @userToDisplay.Id
+        </div>
+        <div class="card-text">
+            <b>@userToDisplay.UserName</b>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] 
+    public UserInventoryDTO userToDisplay { get; set; }
+}

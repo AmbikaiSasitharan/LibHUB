@@ -1,0 +1,65 @@
+﻿@inherits EditGenreInventoryBase
+
+<div class="container">
+    <div class="column">
+        <EditForm Model="@genreToAdd" OnValidSubmit="() => (AddGenre_Click(genreToAdd))">
+            <DataAnnotationsValidator />
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <InputText id="Name" class="form-control" @bind-Value="@genreToAdd.Name" />
+                <ValidationMessage For="@(() => genreToAdd.Name)" />
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary">
+                Add Genre
+            </button>
+        </EditForm>
+    </div>
+    <div class="column">
+        @if (allGenres == null)
+        {
+            <h3>Loading Genre Inventory...</h3>
+        }
+        else
+        {
+            var genrecount = allGenres.Count();
+            @if (genrecount > 0)
+            {
+                var genreList = new List<GenreDetailsDTO>();
+                genreList = allGenres.ToList();
+                <div class="tableWrapper">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Genre ID#</th>
+                            <th>Name</th>
+                        </tr>
+                        @foreach (var genre in allGenres)
+                        {
+                            var Value = genre.Id;
+                            bool Checked = false;
+                            if (SelectedIds.Contains(Value))
+                            {
+                                Checked = true;
+                            }
+                            <tr>
+                                <th><input type="checkbox" checked=@Checked @onchange="eventArgs => {CheckboxClicked(Value, eventArgs.Value);}"></input></th>
+                                <th>@genre.Id</th>
+                                <th>@genre.Name</th>
+                            </tr>
+                        }
+                    </table>
+                </div>
+                
+                <button class="btn btn-primary" @onclick="RemoveSelectedValues">Remove Checked Genre(s)</button>
+
+            }
+        }
+    </div>
+</div>
+
+
+
+
+

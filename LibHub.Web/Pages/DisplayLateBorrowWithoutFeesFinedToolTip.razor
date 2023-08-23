@@ -1,0 +1,40 @@
+﻿<div class="tooltip-container" @onmouseover="ShowToolTip" @onmouseout="HideToolTip">
+    <div class="tooltip-content">
+        @ChildContent
+    </div>
+    <div class="tooltip-text" style="display:@(_isToolTipVisible ? "block" : "none");">
+        @foreach (var borrowDetails in BorrowsDetails)
+        {
+            <div>
+                @($"Borrow ID:{borrowDetails.Id}, {borrowDetails.BookTitle}, Book ID:{borrowDetails.BookId}, {borrowDetails.NumberOfDaysTillFeesAreApplied} days till fees are applied")
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public IEnumerable<BorrowDetailsDTO> BorrowsDetails { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    private bool _isToolTipVisible = false;
+    private bool _isMouseOver = false;
+    private const int ToolTipDelay = 0;
+    
+    private async Task ShowToolTip(MouseEventArgs e)
+    {
+        _isMouseOver = true;
+        await Task.Delay(ToolTipDelay);
+
+        if (_isMouseOver)
+        {
+            _isToolTipVisible = true;
+            StateHasChanged();
+        }
+    }
+
+    private void HideToolTip(MouseEventArgs e)
+    {
+        _isMouseOver = false;
+        _isToolTipVisible = false;
+    }
+}

@@ -1,0 +1,75 @@
+﻿@inherits BorrowHistoryBase
+
+
+<PopUpModel Title="Log History" IsOpened="IsOpened_ViewLogHistory">
+    <ModelBody>
+        @if (LogEntryHistory == null)
+        {
+            <h3>Loading Log History...</h3>
+        }
+        else
+        {
+            var borrowcount = LogEntryHistory.Count();
+            @if (borrowcount > 0)
+            {
+                var borrowDetails = new List<LogEntryDTO>();
+                borrowDetails = LogEntryHistory.ToList();
+                <div>
+                    <table id="customers" style="height: 150px">
+                        <tr>
+                            <th>Borrow or Renew</th>
+                            <th>Borrow ID#</th>
+                            <th>Book ID#</th>
+                            <th>Book Title</th>
+                            <th>Entry Date</th>
+                            <th>Original Due Date</th>
+                            <th>Previous Due Date</th>
+                            <th>Num Of Renewals</th>
+                            <th>Day Returned</th>
+                            <th>Changed Due Date</th>
+                        </tr>
+                        @foreach (var log in LogEntryHistory)
+                        {
+
+                            @if (log.RenewalOrBorrow == "Renewal")
+                            {
+                                <tr>
+                                    <th>@log.RenewalOrBorrow</th>
+                                    <th>@log.BorrowId</th>
+                                    <th>@log.BookId</th>
+                                    <th>@log.BookTitle</th>
+                                    <th>@log.EntryDate</th>
+                                    <th>--</th>
+                                    <th>@log.OriginalDueDate</th>
+                                    <th>--</th>
+                                    <th>--</th>
+                                    <th>@log.ChangedDueDate</th>
+                                </tr>
+                            }
+                            else
+                            {
+                                <tr>
+                                    <th>@log.RenewalOrBorrow</th>
+                                    <th>@log.BorrowId</th>
+                                    <th>@log.BookId</th>
+                                    <th>@log.BookTitle</th>
+                                    <th>@log.EntryDate</th>
+                                    <th>@log.DueDate</th>
+                                    <th>--</th>
+                                    <th>@log.NumOfRenewals</th>
+                                    <th>@log.DayReturned</th>
+                                    <th>--</th>
+                                </tr>
+                            }
+                        }
+                    </table>
+                </div>
+            }
+        }
+        <button class="btn btn-primary" @onclick="closeModal_ViewLogHistory">Close</button>
+    </ModelBody>
+    <ModelFooter>
+
+    </ModelFooter>
+</PopUpModel>
+

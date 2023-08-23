@@ -1,0 +1,115 @@
+﻿@page "/addBookDescriptionPage"
+@inherits LibHub.Web.Pages.AddBookDescriptionBase
+@using Syncfusion.Blazor.Popups;
+@using Syncfusion.Blazor.Buttons;
+
+
+<PopUpModel Title="Author Inventory" IsOpened="IsOpened_ForEditAuthorInventory">
+    <ModelBody>
+        <EditAuthorInventory />
+    </ModelBody>
+    <ModelFooter>
+        <button class="btn btn-primary" @onclick="closeModal_ForEditAuthorInventory">Close Author Invenory</button>
+    </ModelFooter>
+</PopUpModel>
+
+
+<PopUpModel Title="Genre Inventory" IsOpened="IsOpened_ForEditGenreInventory">
+    <ModelBody>
+        <EditGenreInventory />
+    </ModelBody>
+    <ModelFooter>
+        <button class="btn btn-primary" @onclick="closeModal_ForEditGenreInventory">Close Genre Invenory</button>
+    </ModelFooter>
+</PopUpModel>
+
+<EditForm Model="@bookDescriptionToAdd" OnValidSubmit="AddBookDescription_Click">
+    <DataAnnotationsValidator />
+    <div class="container">
+        <div class="column">
+            <div class="form-group">
+                <label for="Title">Title:</label>
+                <InputText id="Title" class="form-control" @bind-Value="@bookDescriptionToAdd.Title" />
+                <ValidationMessage For="@(() => bookDescriptionToAdd.Title)" />
+            </div>
+
+            <div class="form-group">
+                <label for="PublishDate">Publish Date:</label>
+                <InputDate id="PublishDate" class="form-control" @bind-Value="@bookDescriptionToAdd.PublishDate" />
+                <ValidationMessage For="@(() => bookDescriptionToAdd.PublishDate)" />
+            </div>
+
+            <div class="form-group">
+                <label for="Description">Description:</label>
+                <textarea id="Description" class="form-control" rows="11" @bind="bookDescriptionToAdd.Description"></textarea>
+                <ValidationMessage For="@(() => bookDescriptionToAdd.Description)" />
+            </div>
+        </div>
+        <div class="column">
+            <div class="form-group">
+                <p>Select Authors (At least 1 author is required):</p>
+                <div class="selectWrapper">
+                    <select class="selectBox" @onchange="selectedAuthorsChanged" multiple>
+                        @foreach (AuthorDetailsDTO author in allAuthors)
+                        {
+                            <option value="@author.Id">@author.FullName</option>
+                        }
+                    </select>
+
+                    
+                </div>
+                <ValidationMessage For="@(() => bookDescriptionToAdd.AuthorIds)" />
+
+            </div>
+            <button class="btn btn-link" @onclick="openModal_ForEditAuthorInventory">Edit Author Inventory</button>
+            <br />
+            <br />
+            <div class="form-group">
+                <p>Select Genres (At least 1 genre is required):</p>
+                <div class="selectWrapper">
+                    <select class="selectBox" @onchange="selectedGenresChanged" multiple>
+                        @foreach (GenreDetailsDTO genre in allGenres)
+                        {
+                            <option value="@genre.Id">@genre.Name</option>
+                        }
+                    </select>
+                    
+                </div>
+                <ValidationMessage For="@(() => bookDescriptionToAdd.GenreIds)" />
+
+            </div>
+            <button class="btn btn-link" @onclick="openModal_ForEditGenreInventory">Edit Genre Inventory</button>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Add Book Description
+    </button>
+
+</EditForm>
+
+<PopUpModel Title="" IsOpened="IsOpened_ForAddBookDescription">
+    <ModelBody>
+        Are you sure you would like to add the book:
+        Title: @bookDescriptionToAdd.Title
+        Publish Date: @(bookDescriptionToAdd.PublishDate).Date
+    </ModelBody>
+    <ModelFooter>
+        <button class="btn btn-primary" @onclick="cancelModal_ForAddBookDescription">Cancel</button>
+        <button class="btn btn-primary" @onclick="confirmModal_ForAddBookDescription">Save Changes</button>
+    </ModelFooter>
+</PopUpModel>
+
+
+@code {
+
+    private void selectedAuthorsChanged(ChangeEventArgs e)
+    {
+        bookDescriptionToAdd.AuthorIds = ((string[])e.Value).Select(int.Parse).ToList();
+    }
+
+    private void selectedGenresChanged(ChangeEventArgs e)
+    {
+        bookDescriptionToAdd.GenreIds = ((string[])e.Value).Select(int.Parse).ToList();
+    }
+}

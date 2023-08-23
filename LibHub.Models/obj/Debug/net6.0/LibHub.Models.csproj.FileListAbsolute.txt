@@ -1,0 +1,12 @@
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\bin\Debug\net6.0\LibHub.Models.deps.json
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\bin\Debug\net6.0\LibHub.Models.dll
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\bin\Debug\net6.0\LibHub.Models.pdb
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.csproj.AssemblyReference.cache
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.AssemblyInfoInputs.cache
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.AssemblyInfo.cs
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.csproj.CoreCompileInputs.cache
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.dll
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\refint\LibHub.Models.dll
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\LibHub.Models.pdb
+C:\Users\r_sas\Desktop\LibHubSolution\LibHub.Models\obj\Debug\net6.0\ref\LibHub.Models.dll

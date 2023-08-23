@@ -1,0 +1,49 @@
+﻿@page "/UsersWithFeesFinedPage"
+@using System.Globalization;
+@inherits UsersWithFeesFinedBase
+
+
+@if (usersWithLateBorrows == null)
+{
+    <h5>Loading User With Late Borrows And Fines Due...</h5>
+}
+else
+{
+    <h5> USERS <button class="btn btn-header btn-right-align" @onclick="Notify_AllUsers">Notify All</button> </h5>
+    var usercount = usersWithLateBorrows.Count();
+
+    @if (usercount > 0)
+    {
+        var userInventory = new List<UserWithLateBorrowsDTO>();
+        userInventory = usersWithLateBorrows.ToList();
+
+        @foreach (var user in usersWithLateBorrows)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        @user.FullName (ID: @user.UserId)
+                    </div>
+                    <div class="card-text">
+                        <b>@user.UserName<br>
+                            <DisplayLateBorrowWithFeesFinedDetailsToolTip BorrowsDetails="@user.borrows">
+                                <span class="underline-text">View Details</span>
+                            </DisplayLateBorrowWithFeesFinedDetailsToolTip>
+                        </b>
+                    </div>
+                </div>
+                <div class="topright" style="color:red;">
+                        @user.NumBorrowsLate book(s) is/are due
+                    </div>
+                <div class="bottomright" style="color:red;">
+                        Amount Owed: @user.TotalAmountOwed.ToString("C", new CultureInfo("en-US"))
+                    <button class="btn btn-primary" @onclick="() => Notify_User(user)">Notify</button>
+                    </div>
+                </div>
+        }
+    }
+    else
+    {
+        <h3>There are No User With Late Borrows And No Fines Due...</h3>
+    }
+}

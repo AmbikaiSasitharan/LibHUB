@@ -1,0 +1,847 @@
+/* /Pages/AddBookDescription.razor.rz.scp.css */
+/* /Pages/AddUser.razor.rz.scp.css */
+body[b-8wmnubxe59] {
+}
+/* /Pages/BookDescriptionInventory.razor.rz.scp.css */
+/* /Pages/BorrowHistory.razor.rz.scp.css */
+body[b-9bihfl9h9e] {
+}
+/* /Pages/DisplayBookDescriptionDetails.razor.rz.scp.css */
+.column[b-w46oz05chc] {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding: 0 10px;
+}
+
+h5[b-w46oz05chc], h4[b-w46oz05chc], h3[b-w46oz05chc], h7[b-w46oz05chc] {
+    margin: 0; 
+}
+
+h2[b-w46oz05chc] {
+    color: #0c3b2e;
+    font-family: 'League Spartan';
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h7[b-w46oz05chc] {
+    color: #5b9572;
+}
+
+h3[b-w46oz05chc] {
+    color: #f7efc2;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+h5[b-w46oz05chc] {
+    font-size: 30pt;
+}
+
+h1[b-w46oz05chc] {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+h6[b-w46oz05chc] {
+    color: #fbae2a;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+table[b-w46oz05chc] {
+    height: 423px;
+    overflow-x: hidden;
+}
+
+.row[b-w46oz05chc] {
+    background-color: #5b9572;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.sub-row[b-w46oz05chc] {
+    background-color: #f7efc2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bottom-row[b-w46oz05chc] {
+    background-color: #5b9572;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.fa[b-w46oz05chc] {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20pt;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-star[b-w46oz05chc]:before {
+    content: '★ ';
+}
+
+.fa-star-o[b-w46oz05chc]:before {
+    content: '★ ';
+}
+
+.checked[b-w46oz05chc] {
+    color: #fbae2a;
+}
+/* /Pages/DisplayBookDescriptionDetailsCard.razor.rz.scp.css */
+/* /Pages/DisplayBookDescriptionDetailsForPotentialBorrower.razor.rz.scp.css */
+.column[b-xjzuejcexa] {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 10px;
+}
+
+h5[b-xjzuejcexa], h4[b-xjzuejcexa], h3[b-xjzuejcexa], h7[b-xjzuejcexa]{
+    margin: 0;
+}
+
+h7[b-xjzuejcexa] {
+    color: #5b9572;
+}
+
+h2[b-xjzuejcexa] {
+    color: #0c3b2e;
+    font-family: 'League Spartan';
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h3[b-xjzuejcexa] {
+    color: #f7efc2;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+h5[b-xjzuejcexa] {
+    font-size: 30pt;
+}
+
+h1[b-xjzuejcexa] {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+
+
+h6[b-xjzuejcexa] {
+    color: #fbae2a;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+
+table[b-xjzuejcexa] {
+    width: 500px;
+    height: 423px;
+    overflow-x: hidden;
+}
+
+.row[b-xjzuejcexa] {
+    background-color: #5b9572;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.sub-row[b-xjzuejcexa] {
+    background-color: #f7efc2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bottom-row[b-xjzuejcexa] {
+    background-color: #5b9572;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.fa[b-xjzuejcexa] {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20pt;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-star[b-xjzuejcexa]:before {
+    content: '★ ';
+}
+
+.fa-star-o[b-xjzuejcexa]:before {
+    content: '★ ';
+}
+
+.checked[b-xjzuejcexa] {
+    color: #fbae2a;
+}
+/* /Pages/DisplayBookDescriptionDetailsForPotentialBorrowerCard.razor.rz.scp.css */
+body[b-9u2revghai] {
+}
+/* /Pages/DisplayBookDescriptions.razor.rz.scp.css */
+/* /Pages/DisplayInactiveBookDescriptionDetailsCard.razor.rz.scp.css */
+.card[b-ct7ysksxum] {
+    background-color: black;
+    border-color: black;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 12pt;
+}
+
+    .card:hover[b-ct7ysksxum] {
+        background-color: black;
+        border-color: black;
+        margin: 0px;
+        margin-bottom: 5px;
+        border-radius: 40px;
+    }
+
+.card-title[b-ct7ysksxum] {
+    font-family: 'League Spartan';
+    font-size: 15pt;
+    font-weight: 800;
+    color: #ff6a00;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card-text[b-ct7ysksxum] {
+    font-family: 'Libre Baskville Italic';
+    font-style: italic;
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+/* /Pages/DisplayInactiveBookDescriptionDetailsForPotentialBorrowerCard.razor.rz.scp.css */
+.card[b-aczq39l5kc] {
+    background-color: black;
+    border-color: black;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 12pt;
+}
+
+    .card:hover[b-aczq39l5kc] {
+        background-color: black;
+        border-color: black;
+        margin: 0px;
+        margin-bottom: 5px;
+        border-radius: 40px;
+    }
+
+.card-title[b-aczq39l5kc] {
+    font-family: 'League Spartan';
+    font-size: 15pt;
+    font-weight: 800;
+    color: #ff6a00;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card-text[b-aczq39l5kc] {
+    font-family: 'Libre Baskville Italic';
+    font-style: italic;
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+/* /Pages/DisplayInActiveUserDetailsCard.razor.rz.scp.css */
+.card[b-1hzi73ai84] {
+    background-color: black;
+    border-color: black;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 12pt;
+}
+
+    .card:hover[b-1hzi73ai84] {
+        background-color: black;
+        border-color: black;
+        margin: 0px;
+        margin-bottom: 5px;
+        border-radius: 40px;
+    }
+
+.card-title[b-1hzi73ai84] {
+    font-family: 'League Spartan';
+    font-size: 15pt;
+    font-weight: 800;
+    color: #ff6a00;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card-text[b-1hzi73ai84] {
+    font-family: 'Libre Baskville Italic';
+    font-style: italic;
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+/* /Pages/DisplayLateBorrowWithFeesFinedDetailsToolTip.razor.rz.scp.css */
+.tooltip-container[b-yb8nuqiw1d] {
+    position: relative; 
+    display: inline-block;
+    width: 100%;
+
+}
+
+.tooltip-content[b-yb8nuqiw1d] {
+    cursor: pointer;
+
+}
+
+.tooltip-text[b-yb8nuqiw1d] {
+    visibility: hidden;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 1;
+    top: 125%; 
+    left: 0%;
+    opacity: 0;
+}
+
+.tooltip-container:hover .tooltip-text[b-yb8nuqiw1d] {
+    visibility: visible;
+    opacity: 1;
+}
+/* /Pages/DisplayLateBorrowWithoutFeesFinedToolTip.razor.rz.scp.css */
+.tooltip-container[b-glj70up6lr] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.tooltip-content[b-glj70up6lr] {
+    cursor: pointer;
+}
+
+.tooltip-text[b-glj70up6lr] {
+    visibility: hidden;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 1;
+    top: 125%;
+    left: 0%;
+    opacity: 0;
+}
+
+.tooltip-container:hover .tooltip-text[b-glj70up6lr] {
+    visibility: visible;
+    opacity: 1;
+}
+/* /Pages/DisplayUser.razor.rz.scp.css */
+h5[b-nk58jw6q06], h4[b-nk58jw6q06], h3[b-nk58jw6q06] {
+    margin: 0;
+}
+
+h2[b-nk58jw6q06] {
+    color: #fbae2a;
+    font-family: 'League Spartan';
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h3[b-nk58jw6q06] {
+    color: #f7efc2;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+h5[b-nk58jw6q06] {
+    font-size: 30pt;
+}
+
+h1[b-nk58jw6q06] {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+h6[b-nk58jw6q06] {
+    color: #fbae2a;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+table[b-nk58jw6q06] {
+    
+    height: 210px;
+    border-radius: 20px;
+}
+
+
+.sub-row[b-nk58jw6q06] {
+    background-color: #f7efc2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bottom-row[b-nk58jw6q06] {
+    background-color: #b83d02;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.checked[b-nk58jw6q06] {
+    color: #fbae2a;
+}
+
+p[b-nk58jw6q06] {
+    line-height: 18px;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+ .rate[b-nk58jw6q06] {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate:not(:checked) > input[b-nk58jw6q06] {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked) > label[b-nk58jw6q06] {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+        .rate:not(:checked) > label[b-nk58jw6q06]:before {
+            content: '★ ';
+        }
+
+    .rate > input:checked ~ label[b-nk58jw6q06] {
+        color: #ffc700;
+    }
+
+    .rate:not(:checked) > label:hover[b-nk58jw6q06],
+    .rate:not(:checked) > label:hover ~ label[b-nk58jw6q06] {
+        color: #deb217;
+    }
+
+    .rate > input:checked + label:hover[b-nk58jw6q06],
+    .rate > input:checked + label:hover ~ label[b-nk58jw6q06],
+    .rate > input:checked ~ label:hover[b-nk58jw6q06],
+    .rate > input:checked ~ label:hover ~ label[b-nk58jw6q06],
+    .rate > label:hover ~ input:checked ~ label[b-nk58jw6q06] {
+        color: #c59b08;
+    }
+
+
+/* /Pages/DisplayUserDetailsCard.razor.rz.scp.css */
+body[b-zbv8u3zms9] {
+}
+/* /Pages/EditAuthorInventory.razor.rz.scp.css */
+label[b-rxpi3tjp67] {
+    color: #f8e162;
+}
+
+.container[b-rxpi3tjp67] {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space the columns evenly */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px; /* Set a maximum width for the container if needed */
+}
+
+.column[b-rxpi3tjp67] {
+    width: 70%; /* Set the width of each column */
+    padding: 0 10px; /* Add some padding for spacing */
+}
+
+table[b-rxpi3tjp67] {
+    height: 195px;
+    overflow-x: hidden;
+}
+
+/* /Pages/EditGenreInventory.razor.rz.scp.css */
+br[b-dblv8hd0k4] {
+    display: block;
+    margin-bottom: 4em;
+}
+
+table[b-dblv8hd0k4] {
+    width: 228px;
+    overflow-x: hidden;
+}
+/* /Pages/HomePage.razor.rz.scp.css */
+.btn-add-objects[b-3scal78w65] {
+    margin:15px;
+    margin-top: 8px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #b83d02;
+    background-color: #f7efc2;
+    border-color: #b83d02;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    width: 160px;
+    height: 100px;
+}
+
+    .btn-add-objects:hover[b-3scal78w65] {
+        margin: 15px;
+        margin-top: 8px;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'League Spartan';
+        font-weight: 400;
+        width: 160px;
+        height: 100px;
+        color: #f7efc2;
+        background-color: #b83d02;
+        border-color: #b83d02;
+    }
+
+    .btn-add-objects .left-align[b-3scal78w65] {
+        
+    }
+
+    .btn-add-objects .right-align[b-3scal78w65] {
+        
+    }
+
+    .vertical-text-center[b-3scal78w65] {
+        padding: 0px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+     .column-card[b-3scal78w65] {
+        border-radius: 20px;
+        height: 580px;
+        width: 400px;
+    }
+
+.column-card:hover[b-3scal78w65] {
+    border-radius: 20px;
+    height: 580px;
+    width: 400px;
+}
+
+.column[b-3scal78w65] {
+    width: 50%; /* Set the width of each column */
+    padding: 0 10px; /* Add some padding for spacing */
+}
+
+.row[b-3scal78w65] {
+    position: absolute;
+    top: 460px;
+    right: 10px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.btn-primary[b-3scal78w65] {
+    margin: 15px;
+}
+
+.btn-primary:hover[b-3scal78w65] {
+    margin: 15px;
+}
+/* /Pages/UserBookSelection.razor.rz.scp.css */
+body[b-6vd6t8sthw] {
+}
+/* /Pages/UserInventory.razor.rz.scp.css */
+body[b-friuxtzwzq] {
+}
+/* /Pages/UsersWithFeesFined.razor.rz.scp.css */
+h5[b-kelmm3ruxa] {
+    font-size: 30pt;
+}
+
+.card[b-kelmm3ruxa] {
+    height: 80px;
+}
+
+.bottomright[b-kelmm3ruxa] {
+    position: absolute;
+    bottom: 5px;
+    right: 16px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card:hover[b-kelmm3ruxa] {
+    background-color: #f7efc2;
+    border-color: #ff6a00;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.underline-text[b-kelmm3ruxa] {
+    text-decoration: underline;
+}
+
+    .underline-text:hover[b-kelmm3ruxa] {
+        color: black;
+    }
+/* /Pages/UsersWithLateBorrowButNoFeesFined.razor.rz.scp.css */
+h5[b-ti1ka7zpx7] {
+    font-size: 30pt;
+}
+
+.card[b-ti1ka7zpx7] {
+    height: 80px;
+}
+
+.bottomright[b-ti1ka7zpx7] {
+    position: absolute;
+    bottom: 5px;
+    right: 16px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card:hover[b-ti1ka7zpx7] {
+    background-color: #f7efc2;
+    border-color: #ff6a00;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.underline-text[b-ti1ka7zpx7] {
+    text-decoration: underline;
+}
+
+    .underline-text:hover[b-ti1ka7zpx7] {
+        color: black;
+    }
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-om6ijrfc7a] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7efc2;
+}
+
+main[b-om6ijrfc7a] {
+    flex: 1;
+}
+
+.sidebar[b-om6ijrfc7a] {
+    /*#3a0647*/
+    background-color: #0c3b2e;
+}
+
+.top-row[b-om6ijrfc7a] {
+    /*#f7f7f7*/
+    background-color: #595d2b;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-om6ijrfc7a]  a, .top-row[b-om6ijrfc7a]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-om6ijrfc7a]  a:hover, .top-row[b-om6ijrfc7a]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-om6ijrfc7a]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-om6ijrfc7a] {
+        display: none;
+    }
+
+    .top-row.auth[b-om6ijrfc7a] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-om6ijrfc7a]  a, .top-row[b-om6ijrfc7a]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-om6ijrfc7a] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-om6ijrfc7a] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-om6ijrfc7a] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-om6ijrfc7a]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-om6ijrfc7a], article[b-om6ijrfc7a] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-hvlni4h9kh] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-hvlni4h9kh] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-hvlni4h9kh] {
+    font-size: 1.1rem;
+    color: #f7efc2;
+}
+
+.oi[b-hvlni4h9kh] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-hvlni4h9kh] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-hvlni4h9kh] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-hvlni4h9kh] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-hvlni4h9kh]  a {
+        /*#d7d7d7*/
+        color: #f7efc2;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item[b-hvlni4h9kh]  a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: #f7efc2;
+        }
+
+        .nav-item[b-hvlni4h9kh]  a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: #f7efc2;
+        }
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-hvlni4h9kh] {
+        display: none;
+    }
+
+    .collapse[b-hvlni4h9kh] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

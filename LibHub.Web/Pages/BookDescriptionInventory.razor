@@ -1,0 +1,20 @@
+﻿@page "/BooksInventory"
+@inherits BookDescriptionInventoryBase
+
+@if (BookDescriptionInventory == null)
+{
+    <h3>Loading Book Inventory...</h3>
+}
+else
+{
+    var bookdescriptioncount = BookDescriptionInventory.Count();
+
+    @if (bookdescriptioncount > 0)
+    {
+        <h5> BOOKS <button class="btn btn-header btn-right-align" @onclick="NavigateToAddBookDescripionPage">Add BookDescription</button> </h5>
+        
+        var bookDescriptionInventory = new List<BookDescriptionInventoryDTO>();
+        bookDescriptionInventory = BookDescriptionInventory.ToList();
+        <DisplayBookDescriptions bookDescriptionInventoryDTO="@bookDescriptionInventory"></DisplayBookDescriptions>
+    }
+}

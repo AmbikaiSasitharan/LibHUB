@@ -1,0 +1,37 @@
+h5[b-kelmm3ruxa] {
+    font-size: 30pt;
+}
+
+.card[b-kelmm3ruxa] {
+    height: 80px;
+}
+
+.bottomright[b-kelmm3ruxa] {
+    position: absolute;
+    bottom: 5px;
+    right: 16px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.card:hover[b-kelmm3ruxa] {
+    background-color: #f7efc2;
+    border-color: #ff6a00;
+    margin: 0px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.underline-text[b-kelmm3ruxa] {
+    text-decoration: underline;
+}
+
+    .underline-text:hover[b-kelmm3ruxa] {
+        color: black;
+    }

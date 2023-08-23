@@ -1,0 +1,83 @@
+.btn-add-objects[b-3scal78w65] {
+    margin:15px;
+    margin-top: 8px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #b83d02;
+    background-color: #f7efc2;
+    border-color: #b83d02;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    width: 160px;
+    height: 100px;
+}
+
+    .btn-add-objects:hover[b-3scal78w65] {
+        margin: 15px;
+        margin-top: 8px;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'League Spartan';
+        font-weight: 400;
+        width: 160px;
+        height: 100px;
+        color: #f7efc2;
+        background-color: #b83d02;
+        border-color: #b83d02;
+    }
+
+    .btn-add-objects .left-align[b-3scal78w65] {
+        
+    }
+
+    .btn-add-objects .right-align[b-3scal78w65] {
+        
+    }
+
+    .vertical-text-center[b-3scal78w65] {
+        padding: 0px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+     .column-card[b-3scal78w65] {
+        border-radius: 20px;
+        height: 580px;
+        width: 400px;
+    }
+
+.column-card:hover[b-3scal78w65] {
+    border-radius: 20px;
+    height: 580px;
+    width: 400px;
+}
+
+.column[b-3scal78w65] {
+    width: 50%; /* Set the width of each column */
+    padding: 0 10px; /* Add some padding for spacing */
+}
+
+.row[b-3scal78w65] {
+    position: absolute;
+    top: 460px;
+    right: 10px;
+    font-family: 'Libre Baskville Normal';
+    font-size: 10pt;
+    font-weight: 100;
+    color: #ff6a00;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.btn-primary[b-3scal78w65] {
+    margin: 15px;
+}
+
+.btn-primary:hover[b-3scal78w65] {
+    margin: 15px;
+}

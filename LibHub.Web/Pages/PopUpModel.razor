@@ -1,0 +1,29 @@
+﻿<div class="pop-up-model @cssClass">
+    <div class="pop-up-model-content">
+        <div class="pop-up-model-header">
+            <h5 class="pop-model-title">@Title</h5>
+        </div>
+        <div class="pop-up-model-body">
+            @ModelBody
+        </div>
+        <div class="pop-up-model-footer"> 
+            @ModelFooter
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ModelBody { get; set; }
+
+    [Parameter]
+    public RenderFragment ModelFooter { get; set; }
+
+    [Parameter]
+    public bool IsOpened { get; set; }
+
+    string cssClass => IsOpened ? "show" : "hide";
+}

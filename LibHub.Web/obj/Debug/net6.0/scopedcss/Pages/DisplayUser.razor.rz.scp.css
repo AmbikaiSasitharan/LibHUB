@@ -1,0 +1,114 @@
+h5[b-nk58jw6q06], h4[b-nk58jw6q06], h3[b-nk58jw6q06] {
+    margin: 0;
+}
+
+h2[b-nk58jw6q06] {
+    color: #fbae2a;
+    font-family: 'League Spartan';
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 10px;
+    padding: 1px;
+}
+
+h3[b-nk58jw6q06] {
+    color: #f7efc2;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+h5[b-nk58jw6q06] {
+    font-size: 30pt;
+}
+
+h1[b-nk58jw6q06] {
+    color: #b83d02;
+    font-family: 'Libre Baskville Normal';
+    font-size: 15pt;
+    font-weight: 400;
+    margin: 10px;
+    padding: 1px;
+}
+
+h6[b-nk58jw6q06] {
+    color: #fbae2a;
+    font-size: 15pt;
+    font-family: 'League Spartan';
+}
+
+table[b-nk58jw6q06] {
+    
+    height: 210px;
+    border-radius: 20px;
+}
+
+
+.sub-row[b-nk58jw6q06] {
+    background-color: #f7efc2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.bottom-row[b-nk58jw6q06] {
+    background-color: #b83d02;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.checked[b-nk58jw6q06] {
+    color: #fbae2a;
+}
+
+p[b-nk58jw6q06] {
+    line-height: 18px;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+ .rate[b-nk58jw6q06] {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+    .rate:not(:checked) > input[b-nk58jw6q06] {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked) > label[b-nk58jw6q06] {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+        .rate:not(:checked) > label[b-nk58jw6q06]:before {
+            content: '★ ';
+        }
+
+    .rate > input:checked ~ label[b-nk58jw6q06] {
+        color: #ffc700;
+    }
+
+    .rate:not(:checked) > label:hover[b-nk58jw6q06],
+    .rate:not(:checked) > label:hover ~ label[b-nk58jw6q06] {
+        color: #deb217;
+    }
+
+    .rate > input:checked + label:hover[b-nk58jw6q06],
+    .rate > input:checked + label:hover ~ label[b-nk58jw6q06],
+    .rate > input:checked ~ label:hover[b-nk58jw6q06],
+    .rate > input:checked ~ label:hover ~ label[b-nk58jw6q06],
+    .rate > label:hover ~ input:checked ~ label[b-nk58jw6q06] {
+        color: #c59b08;
+    }
+
+

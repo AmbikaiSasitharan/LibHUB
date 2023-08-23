@@ -1,0 +1,58 @@
+﻿@page "/"
+@inherits HomePageBase
+<div class="container">
+    <div class="column">
+        <div class="card column-card">
+            <div style="border-top-left-radius: 20px; border-top-right-radius: 20px; overflow: hidden;">
+                <SfAccumulationChart Title="Book Statistics" Width="400px" Height="455px">
+                    <AccumulationChartSeriesCollection>
+                        <AccumulationChartSeries Type="AccumulationType.Pie" DataSource="@BookInformation" XName="Label" YName="Value" InnerRadius="40%">
+                            <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
+                        </AccumulationChartSeries>
+                    </AccumulationChartSeriesCollection>
+                    <AccumulationChartLegendSettings Visible="true" Position="LegendPosition.Bottom"></AccumulationChartLegendSettings>
+                </SfAccumulationChart>
+            </div>
+                        
+            <div class="row">
+                <button class="btn btn-add-objects left-align" @onclick="NavigateToAddBookDescriptionPage">
+                    <span class="material-symbol-outlined">
+                        menu_book
+                    </span>
+                    <span class="vertical-text-center">
+                        Add Book
+                    </span>
+                </button>
+                <button class="btn btn-add-objects right-align" @onclick="NavigateToAddUserPage">
+                    <span class="material-symbol-outlined">
+                        person_book
+                    </span>
+                    <span class="vertical-text-center">
+                        Add User
+                    </span>
+                </button>                
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card column-card">
+            <button class="btn btn-primary" @onclick="NavigateToUsersWithFeesFinedPage">
+                Users With Fees Fined
+            </button>
+            <button class="btn btn-primary" @onclick="NavigateToUsersWithLateBorrowButNoFeesFinedPage">
+                Users With Overdue Books But No Fines
+            </button>
+            <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; overflow: hidden;">
+                <SfAccumulationChart Title="User Statistics" Width="400px" Height="455px">
+                    <AccumulationChartSeriesCollection>
+                        <AccumulationChartSeries Type="AccumulationType.Pie" DataSource="@UserInformation" XName="Label" YName="Value" InnerRadius="40%">
+                            <AccumulationChartTooltipSettings Enable="true"></AccumulationChartTooltipSettings>
+                        </AccumulationChartSeries>
+                    </AccumulationChartSeriesCollection>
+                    <AccumulationChartLegendSettings Visible="true" Position="LegendPosition.Bottom"></AccumulationChartLegendSettings>
+                </SfAccumulationChart>
+            </div>
+        </div>
+    </div>
+</div>
+    

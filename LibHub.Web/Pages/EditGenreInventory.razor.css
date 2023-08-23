@@ -1,0 +1,9 @@
+﻿br {
+    display: block;
+    margin-bottom: 4em;
+}
+
+table {
+    width: 228px;
+    overflow-x: hidden;
+}

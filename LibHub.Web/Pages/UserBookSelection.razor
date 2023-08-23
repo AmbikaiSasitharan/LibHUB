@@ -1,0 +1,34 @@
+﻿@page "/userBookSelection/{UserId:int}"
+@inherits UserBookSelectionBase
+
+
+@if (BookDescriptionInventory == null)
+{
+    <h3>Loading Book Inventory...</h3>
+}
+else
+{
+    <h5>Books <button class="btn btn-header btn-right-align" @onclick="NavigateBackToUser">Go Back To User Details</button></h5>
+    var bookdescriptioncount = BookDescriptionInventory.Count();
+
+    @if (bookdescriptioncount > 0)
+    {
+        @foreach (var bookDescription in BookDescriptionInventory)
+        {
+            if (bookDescription.IsActive)
+            {
+                <div>
+                    <a href="DisplayBookDescriptionDetailsForPotentialBorrower/@bookDescription.Id/@UserId">
+                        <DisplayBookDescriptionDetailsForPotentialBorrowerCard bookDescriptionInventoryDTO="bookDescription" />
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div>
+                    <DisplayInactiveBookDescriptionDetailsForPotentialBorrowerCard bookDescriptionInventoryDTO="bookDescription" />
+                </div>
+            }            
+        }
+    }
+}

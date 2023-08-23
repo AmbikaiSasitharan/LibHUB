@@ -1,0 +1,61 @@
+﻿@page "/UserInventory"
+@inherits UserInventoryBase
+
+
+
+@if (UserInventory == null)
+{
+    <h3>Loading User Inventory...</h3>
+}
+else
+{
+    <h5> USERS <button class="btn btn-header btn-right-align" @onclick="NavigateToAddUserPage">Add User</button> </h5>
+    var usercount = UserInventory.Count();
+
+    @if (usercount > 0)
+    {
+        var userInventory = new List<UserInventoryDTO>();
+        userInventory = UserInventory.ToList();
+
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-11">
+                <button class="btn btn-primary btn-left-alig" @onclick="DeactivateSelectedValues">Deactivated Checked User(s)</button>
+                <button class="btn btn-primary btn-right-align" @onclick="ActivateSelectedValues">Activated Checked User(s)</button>
+
+            </div>
+        </div>
+        
+        @foreach (var user in userInventory)
+        {   
+            var Value = user.Id;
+            bool Checked = false;
+            if (SelectedIds.Contains(Value))
+            {
+                Checked = true;
+            }
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <input type="checkbox" checked=@Checked @onchange="eventArgs => {CheckboxClicked(Value, eventArgs.Value);}"></input>
+                </div>    
+
+            @if (user.IsActive)
+            {
+                <div class="col-md-11">
+                    <a href="displayuserdetails/@user.Id">
+                        <DisplayUserDetailsCard userToDisplay="user"></DisplayUserDetailsCard>
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-11">
+                        <DisplayInActiveUserDetailsCard userToDisplay="user"></DisplayInActiveUserDetailsCard>
+                </div>
+            }
+            </div>
+        }
+    }
+}
