@@ -22,7 +22,7 @@ In the future I would like to add more features such as:
 - Adding an Add Cart DTO to allow users to browse for books and maintain a list to dynamically change before confirming the borrow of multiple books in one transaction
 - and more...
 
-If you would liek to use this code and practice it urself you will have to: 
+If you would like to use this code and practice it urself you will have to: 
 1. Download the LibHub.Api, LibuHub.Web, and LibHub.Models files.
 2. Create a new project in Visual Studios.
 3. Add the three files as Existing Items into your newly created project solution.
