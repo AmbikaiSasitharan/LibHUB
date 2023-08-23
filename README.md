@@ -16,4 +16,15 @@ Finally, you can also notify all users with overdue books when pressing the "Not
 <img width="901" alt="UserProfileInformationPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/61331967-198e-4546-b21a-532f913e0bdf">
 <img width="901" alt="BookListPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/1a202df8-5b77-4469-bd50-2b76830ea543">
 <img width="901" alt="BookProfileInformationPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/a812de08-6333-4b66-a13b-cb0f78ef199e">
+
+In the future I would like to add more features such as: 
+- Integration of PayPal Payment Gateway that will appear when a user tries to return a book that has a fine on it
+- Adding an Add Cart DTO to allow users to browse for books and maintain a list to dynamically change before confirming the borrow of multiple books in one transaction
+- and more...
+
+If you would liek to use this code and practice it urself you will have to: 
+1. Download the LibHub.Api, LibuHub.Web, and LibHub.Models files.
+2. Create a new project in Visual Studios.
+3. Add the three files as Existing Items into your newly created project solution.
+4. Replace the  "EmailHost","EmailUserName","EmailPassword", "ConnectionStrings" values in the appsettings.json found under the LibHub.Api folder with yoru libraries values.
  
