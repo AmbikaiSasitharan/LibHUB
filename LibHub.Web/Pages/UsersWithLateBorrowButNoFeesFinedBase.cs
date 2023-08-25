@@ -40,7 +40,7 @@ namespace LibHub.Web.Pages
             }
             var emailDTO = new EmailDTO
             {
-                To = "verner22@ethereal.email",
+                To = user.Email,
                 Subject = "Library Late Notice",
                 Body = 
                 $"<div>Dear {user.FullName}, </div>" +
