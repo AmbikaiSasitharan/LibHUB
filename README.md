@@ -20,7 +20,8 @@ Finally, you can also notify all users with overdue books when pressing the "Not
 In the future I would like to add more features such as: 
 - Integration of PayPal Payment Gateway that will appear when a user tries to return a book that has a fine on it
 - Adding an Add Cart DTO to allow users to browse for books and maintain a list to dynamically change before confirming the borrow of multiple books in one transaction
-- and more...
+- Enabling the ability for the system to provided suggestions to a user based on a number of factors such as past borrows, recenty viewed, etc.
+- Addnig a searchbar to filter out users or books during a particular search session
 
 If you would like to use this code and practice it urself you will have to: 
 1. Download the LibHub.Api, LibuHub.Web, and LibHub.Models files.
