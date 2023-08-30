@@ -1,5 +1,5 @@
 # LibHUB
- A project I created using Visual Studios .Net Core Framework, Entity Framework, Blazor WebAssemply, and Web APIs which is a library database management system including features such as borrow, user, and book database administration and user informing systems. <br />
+ A project I created using Visual Studios .Net Core Framework, Entity Framework, Blazor WebAssemply, and Web APIs which is a library database management system that includes features such as borrow, user, and book database administration and user informing systems. <br />
  <br />
 This web application comes with a number of policies such as: 
 - A user can borrow a maximum of 5 books
