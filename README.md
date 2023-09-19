@@ -11,11 +11,15 @@ These policies are applied when restricting a user's ability to borrow or renew 
 <br />
 Finally, you can also notify all users with overdue books when pressing the "Notify All" or "Notify" buttons available on the "Users with Fees Fined" page and "Users With Overdue Books But No Fines" page.<br />
 <br />
-![alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/HomeScreen.png? raw=true)
-<img width="901" alt="UserListPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/a02ba65b-353f-4dfb-affc-d07f9d5637df">
-<img width="901" alt="UserProfileInformationPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/61331967-198e-4546-b21a-532f913e0bdf">
-<img width="901" alt="BookListPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/1a202df8-5b77-4469-bd50-2b76830ea543">
-<img width="901" alt="BookProfileInformationPage" src="https://github.com/AmbikaiSasitharan/LibHUB/assets/140208293/a812de08-6333-4b66-a13b-cb0f78ef199e">
+![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/HomeScreen.png? raw=true)
+
+![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/UserListPage.png?raw=true)
+
+![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/UserProfileInformationPage.png?raw=true)
+
+![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/BookListPage.png?raw=true)
+
+![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/BookProfileInformationPage.png?raw=true)
 
 In the future I would like to add more features such as: 
 - Integration of PayPal Payment Gateway that will appear when a user tries to return a book that has a fine on it
