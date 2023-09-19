@@ -11,6 +11,7 @@ These policies are applied when restricting a user's ability to borrow or renew 
 <br />
 Finally, you can also notify all users with overdue books when pressing the "Notify All" or "Notify" buttons available on the "Users with Fees Fined" page and "Users With Overdue Books But No Fines" page.<br />
 <br />
+
 ![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/HomeScreen.png?raw=true)
 
 ![Alt text](https://github.com/AmbikaiSasitharan/LibHUB/blob/main/LibHUB_Images/UserListPage.png?raw=true)
